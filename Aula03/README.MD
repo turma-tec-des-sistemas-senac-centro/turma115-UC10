@@ -87,7 +87,7 @@ expect(() => {
 function dividirPorZero() {
     throw new Error('Divisão por zero');
 }
-expect(dividirPorZero).toThrow('Divisão por zero');
+expect(() => dividirPorZero).toThrow('Divisão por zero');
 ```
 
 ---
