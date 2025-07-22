@@ -1,0 +1,9 @@
+DB_DADTABASE=aula
+DB_USER=postgres
+DB_PASSWORD=BemVindo!
+DB_HOST=localhost
+DB_PORT=5432
+PORT=3000
+
+
+npx test produtocontroller.test.js
