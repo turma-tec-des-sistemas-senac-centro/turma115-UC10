@@ -15,7 +15,7 @@ beforeAll(async () => {
     instituicao: "IFPB"
   });
   expositorId = expositor.id;
-});
+})
 
 describe('Testes de Protótipos', () => {
   it('Deve cadastrar protótipo com sucesso', async () => {

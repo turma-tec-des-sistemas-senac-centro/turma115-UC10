@@ -4,7 +4,7 @@ const { sequelize } = require('../src/database/config/database');
 const Expositor = require('../src/modules/expositor/models/expositor.model');
 
 beforeAll(async () => {
-  await sequelize.sync({ force: true });
+  await sequelize.sync({ force: true })
 });
 
 describe('Testes de Expositores', () => {
