@@ -1,6 +1,6 @@
 const express = require('express');
-const expositorRoutes = require('./modules/expositor/routes/expositorRoutes');
-const prototipoRoutes = require('./modules/prototipo/routes/prototipoRoutes');
+const expositorRoutes = require('../Aula07/src/modules/expositor/routes/expositorRoutes');
+const prototipoRoutes = require('../Aula07/src/modules/prototipo/routes/PrototipoRoutes');
 
 const app = express();
 app.use(express.json());

@@ -1,8 +1,9 @@
 const request = require('supertest');
-const app = require('../src/app');
-const { sequelize } = require('../src/database/config/database');
-const Expositor = require('../src/modules/expositor/models/expositor.model');
-const Prototipo = require('../src/modules/prototipo/models/prototipo.model');
+const app = require('../index');
+
+const { sequelize } = require('../database/configDB');
+const Expositor = require('../src/modules/expositor/models/expositorModel');
+const Prototipo = require('../src/modules/prototipo/models/prototipoModel');
 
 let expositorId;
 

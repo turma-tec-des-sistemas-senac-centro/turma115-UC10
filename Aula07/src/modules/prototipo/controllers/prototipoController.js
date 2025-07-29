@@ -1,4 +1,4 @@
-const Prototipo = require('../models/prototipo.model');
+const Prototipo = require('../models/prototipoModel');
 const Expositor = require('../../expositor/models/expositorModel');
 
 module.exports = {
