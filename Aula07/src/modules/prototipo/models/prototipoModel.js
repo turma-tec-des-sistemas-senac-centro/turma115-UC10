@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const { sequelize } = require('../../../../database');
+const { sequelize } = require('../../../../database/configDB');
 const Expositor = require('../../expositor/models/expositorModel');
 
 const Prototipo = sequelize.define('Prototipo', {
