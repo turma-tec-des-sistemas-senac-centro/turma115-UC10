@@ -118,4 +118,6 @@ Link do repositório GitHub ou pasta compartilhada com todos os arquivos do proj
 
 
  npx  jest expositor.test.js // na rais turma115-UC10
+
+ npx jest livroController2.test.js  
  
