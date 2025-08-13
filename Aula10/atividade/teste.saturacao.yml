@@ -2,9 +2,38 @@ config:
   target: "http://localhost:3000"
   phases:
     - duration: 30
-      arrivalRate: 11
+      arrivalRate: 5
+      name: "rps 5"
+    - duration: 30
+      arrivalRate: 10
+      name: "rps 10"
+    - duration: 30
+      arrivalRate: 20
+      name: "rps 20"
+    - duration: 30
+      arrivalRate: 30
+      name: "rps 30"
+    - duration: 30
+      arrivalRate: 40
+      name: "rps 40"
+    - duration: 30
+      arrivalRate: 50
+      name: "rps 50"
+  http:
+    pool: 200        # Reutiliza conexões (keep-alive)
+    timeout: 10      # Timeout curto para detectar travamentos
+  plugins:
+    ensure: {}
+
+# Critérios automáticos de quebra (opcional)
+ensure:
+  - "errors.rate < 0.01"                 # menos de 1% de erro
+  - "http.response_time.p95 < 5000"      # p95 menor que 5s
+  - "http.codes.200 > 0"                 # tem que retornar 200
+
 scenarios:
-  - flow:
+  - name: "CRUD de livros"
+    flow:
       - get:
           url: "/livros"
       - post:

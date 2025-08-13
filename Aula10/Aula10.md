@@ -122,3 +122,5 @@ Request latency:
 npx artillery run teste.carga.yml --record --key a9_xx3qscdtdrhj7vzdfya1ivzjyauptas5
 
 Test run id: tdzrd_5r5rmeygp9bbrfyybz56zew6c9bdm_6tqy
+
+artillery.io/
