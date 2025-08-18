@@ -1,0 +1,4 @@
+cria pasta Aula11
+npm create vite@latest ./
+npm install
+npm install cypress --save-dev
