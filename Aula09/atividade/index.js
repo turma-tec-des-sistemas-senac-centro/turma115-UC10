@@ -11,12 +11,18 @@ app.use('/livros', livroRoutes);
 
 //await sequelize.sync({ force: true })
 
+app.listen(PORT, async () => {
+    try {
+        await sequelize.authenticate();
+        console.log('Conexão com o banco de dados estabelecida com sucesso.');
 
-app.listen(PORT, ()=>{
-    console.log(`aplicação rodando em http://localhost:${PORT}`); 
-})
+        await sequelize.sync({ force: true, alter: true });
+        console.log('Banco de dados sincronizado com sucesso.');
+    } catch (err) {
+        console.error('Erro ao conectar ou sincronizar o banco de dados:', err);
+    }
+    console.log(`Servidor rodando na porta ${PORT}`);
+});
 
 module.exports = app;
-
-
 
