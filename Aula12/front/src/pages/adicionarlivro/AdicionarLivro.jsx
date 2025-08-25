@@ -10,3 +10,8 @@ const AdicionarLivro = () => {
 };
 
 export default AdicionarLivro;
+
+
+// nesse caso não precisa da linha de código do CSS - já estiliza na propria linha de comando 
+//Isso que você está usando é Tailwind CSS. Diferente do CSS tradicional (arquivo .css com classes próprias),
+//  no Tailwind você aplica as classes utilitárias diretamente no atributo className.
