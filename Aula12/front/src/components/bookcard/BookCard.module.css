@@ -1,0 +1,68 @@
+/* BookCard.module.css */
+
+.card {
+  background: #fff;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  width: 240px;            /* ~w-60 */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title {
+  font-size: 1.125rem;     /* ~text-xl */
+  font-weight: 700;        /* bold */
+  margin: 0 0 4px 0;
+  color: #111827;
+}
+
+.author {
+  margin: 0;
+  color: #4b5563;          /* cinza médio */
+}
+
+.genre {
+  margin: 0;
+  color: #6b7280;          /* cinza mais claro */
+}
+
+.price {
+  margin: 6px 0;
+  font-weight: 600;
+  color: #047857;          /* verde */
+}
+
+.detailsLink {
+  color: #2563eb;          /* azul */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.detailsLink:hover,
+.detailsLink:focus {
+  text-decoration: underline;
+}
+
+.deleteBtn {
+  margin-top: 8px;
+  background: transparent;
+  border: 0;
+  color: #dc2626;          /* vermelho */
+  cursor: pointer;
+  padding: 4px 0;
+  text-align: left;
+}
+
+.deleteBtn:hover,
+.deleteBtn:focus {
+  color: #991b1b;          /* vermelho mais escuro */
+}
+
+.detailsLink:focus-visible,
+.deleteBtn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
