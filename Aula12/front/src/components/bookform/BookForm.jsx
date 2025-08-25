@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import LivroService from '../../services/livroService'; // Importa os serviços para adicionar e atualizar livros
+import LivroService from '../../service/livroService'; // Importa os serviços para adicionar e atualizar livros
 
 const BookForm = ({ livroEdit }) => {
   const [titulo, setTitulo] = useState('');

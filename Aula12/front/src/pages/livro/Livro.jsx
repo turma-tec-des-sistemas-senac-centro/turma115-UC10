@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import LivroService from '../../services/livroService';
+import LivroService from '../../service/livroService';
 import BookCard from '../../components/bookcard/BookCard';
 import { useNavigate } from 'react-router-dom';
 

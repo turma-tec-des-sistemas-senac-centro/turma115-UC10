@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'; // Para obter o ID do livro da URL
 import { useEffect, useState } from 'react';
-import LivroService from '../../services/livroService'; // Importa o serviço para buscar o livro por ID
+import LivroService from '../../service/livroService'; // Importa o serviço para buscar o livro por ID
 import BookForm from '../../components/bookform/BookForm';  // Importa o componente de formulário
 
 const EditarLivro = () => {
